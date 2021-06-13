@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("""
+**Bold**, `code`!
+[Visit our website](https://www.capitalone.com).
+Code blocks with three backticks lose newlines:
+```
+func hello() {
+
+   print("hello world")
+
+}
+```
+
+Lists don't seem to be supported:
+* Write the press release
+* Update the website
+* Contact the media
+""")
+        }
     }
 }
 
